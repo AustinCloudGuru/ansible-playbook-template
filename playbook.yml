@@ -1,0 +1,12 @@
+---
+- hosts: all
+  connection: local
+  become: yes
+
+  vars_files:
+    - vars/common.yml
+    - vars/datadog.yml
+
+  roles:
+    - acg.common
+    - datadog.datadog

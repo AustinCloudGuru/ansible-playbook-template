@@ -1,0 +1,19 @@
+---
+ansible_python_interpreter: /usr/bin/python
+datadog_agent_major_version: 7
+datadog_config:
+  log_level: INFO
+  apm_config:
+    enable: false
+  logs_enabled: true
+  tags:
+    - "application:template"
+datadog_checks:
+  common:
+    logs:
+      - type: file
+        path: /var/log/messages
+        source: messages
+      - type: file
+        path: /var/log/secure
+        source: secure
