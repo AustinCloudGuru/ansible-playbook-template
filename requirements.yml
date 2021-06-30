@@ -1,6 +1,7 @@
-- name:    acg.common
-  src:     https://github.com/acg/ansible-role-common.git
-  scm:     git
-  version: master
+---
+#- name:    acg.common
+  #src:     https://github.com/acg/ansible-role-common.git
+  #scm:     git
+  #version: master
 
-- name: datadog.datadog
+#- name: datadog.datadog
